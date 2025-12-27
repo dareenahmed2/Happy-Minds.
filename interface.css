@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  min-height: 100vh;
+  background: url("https://i.pinimg.com/736x/10/97/15/109715d572c859d6acce2a75c8a6d3bb.jpg")
+              center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Chewy', cursive;
+  font-size: 30px;
+  color: #6A0DAD;
+}
+
+.login-btn {
+  background: #6A0DAD;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  background: #ee5168;
+}
+
+.user-area {
+  font-weight: bold;
+  color: #6A0DAD;
+}
+
+/* Center */
+.center-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.monster {
+  width: 150px;
+}
+
+.center-text {
+  margin-top: 15px;
+  font-size: 28px;
+  color: #ee5168;
+}
+
+/* Start Button */
+.start-button {
+  margin-top: 15px;
+  padding: 6px 18px;
+  font-size: 15px;
+  background: #6A0DAD;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background: #ee5168;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  width: 380px;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  color: #6A0DAD;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.avatars {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 12px;
+  background: #6A0DAD;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 12px;
+  color: #6A0DAD;
+  font-weight: bold;
+}
+
+.footer span {
+  color: #ee5168;
+}
+
+/* إخفاء نهائي */
+.hide {
+  display: none !important;
+}

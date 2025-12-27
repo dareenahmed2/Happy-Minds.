@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subjects</title>
+<link rel="stylesheet" href="subjects.css">
+</head>
+<body>
+
+<h1 id="chooseText">Choose the subject you need to learn</h1>
+
+<div class="cards">
+  <div class="card" onclick="location.href='math.html'">
+    <img src="download (5).png" alt="Math">
+    <h3>Math</h3>
+  </div>
+  <div class="card" onclick="location.href='science.html'">
+    <img src="download (3).png" alt="Science">
+    <h3>Science</h3>
+  </div>
+  <div class="card" onclick="location.href='english.html'">
+    <img src="download (2).png" alt="English">
+    <h3>English</h3>
+  </div>
+</div>
+<nav class="navbar">
+  <div class="logo">Happy Minds</div>
+  <div class="user-area" id="userArea"></div>
+  <a href="#" class="login-btn" id="loginBtn">Login</a>
+</nav>
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Create Account</h2>
+
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Full Name" required>
+
+      <div class="avatars">
+        <label><input type="radio" name="avatar" value="cat" required> 🐱</label>
+        <label><input type="radio" name="avatar" value="lion"> 🦁</label>
+        <label><input type="radio" name="avatar" value="fox"> 🦊</label>
+      </div>
+
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <input type="text" placeholder="Nationality" required>
+      <input type="date" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+
+<audio id="chooseSound" src="choose-subject.mp3"></audio>
+<script src="subjects.js"></script>
+</body>
+</html>

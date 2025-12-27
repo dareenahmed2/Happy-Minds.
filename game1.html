@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Adventure</title>
+  <link rel="stylesheet" href="game1.css">
+</head>
+<body>
+
+  <h1>🌍 Word Adventure</h1>
+
+  <div class="game-box" id="gameBox">
+    <img id="image" src="" alt="word image">
+
+    <div class="buttons">
+      <button onclick="checkAnswer(0)" id="btn0"></button>
+      <button onclick="checkAnswer(1)" id="btn1"></button>
+      <button onclick="checkAnswer(2)" id="btn2"></button>
+    </div>
+
+    <p id="result"></p>
+    <button id="nextBtn" onclick="nextQuestion()">Next ➡</button>
+  </div>
+
+  <script src="game1.js"></script>
+</body>
+</html>

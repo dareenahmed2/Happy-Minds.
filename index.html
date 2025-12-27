@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun Monster Page</title>
+
+<link rel="stylesheet" href="interface.css">
+<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<audio id="welcomeSound" src="welcome.mp3"></audio>
+
+<nav class="navbar">
+  <div class="logo">Happy Minds</div>
+  <div class="user-area" id="userArea"></div>
+  <a href="#" class="login-btn" id="loginBtn">Login</a>
+</nav>
+
+<div class="center-container">
+  <img src="image.png" alt="Cute Monster" class="monster">
+
+
+  <div class="center-text" id="welcomeText">Welcome to our website</div>
+
+
+  <button id="startButton" class="start-button" title="Click me to start">
+    Start
+  </button>
+</div>
+
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Create Account</h2>
+
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Full Name" required>
+
+      <div class="avatars">
+        <label><input type="radio" name="avatar" value="cat" required> 🐱</label>
+        <label><input type="radio" name="avatar" value="lion"> 🦁</label>
+        <label><input type="radio" name="avatar" value="fox"> 🦊</label>
+      </div>
+
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <input type="text" placeholder="Nationality" required>
+      <input type="date" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  Made by <span>@Dareen Ahmed 2025</span> 💜
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

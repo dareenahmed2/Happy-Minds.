@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vulcano Lab</title>
+<link rel="stylesheet" href="volcano.css">
+</head>
+<body>
+
+<div class="lab">
+
+  <h1 id="titleText">Choose two elements</h1>
+
+  <div class="elements">
+
+    <div class="element red" data-element="Fire">
+      🔴
+      <span>Fire</span>
+    </div>
+
+    <div class="element blue" data-element="Water">
+      🔵
+      <span>Water</span>
+    </div>
+
+    <div class="element green" data-element="Nature">
+      🟢
+      <span>Nature</span>
+    </div>
+
+  </div>
+
+  <div class="reaction" id="reactionBox">
+    Waiting for elements...
+  </div>
+
+  <button id="resetBtn">Try Again 🔄</button>
+
+</div>
+
+<script src="volcano.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#e0f7ff, #fef6ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #6A0DAD;
+  margin: 25px;
+  font-size: 32px;
+}
+
+.experiments {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-auto-rows: 260px;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.experiment {
+  background: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experiment:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.experiment img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.experiment h3 {
+  margin-top: 15px;
+  color: #6A0DAD;
+  font-size: 16px;
+}
+
+/* ترتيب 3 فوق و2 تحت */
+.experiments > .experiment:nth-child(4) {
+  grid-column: 1;
+}
+
+.experiments > .experiment:nth-child(5) {
+  grid-column: 2;
+}
