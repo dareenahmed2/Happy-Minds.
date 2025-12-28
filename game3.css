@@ -98,3 +98,20 @@ h1 {
   color: white;
   cursor: pointer;
 }
+
+
+
+
+@media (max-width: 992px) {
+  .pictures {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width:768px) {
+  .pictures{
+  grid-template-columns: 1fr;
+}
+}
+
