@@ -33,6 +33,7 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
 .card:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
@@ -212,16 +213,368 @@ body {
   margin-top:15px;
   color:#6A0DAD;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: rgba(255,255,255,0.95);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 25px;
-  z-index: 1000;
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* للهواتف الصغيرة جداً (أقل من 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 45px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .login-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  #chooseText {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .cards {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .card {
+    width: 85%;
+    max-width: 160px;
+    height: 180px;
+    padding-top: 12px;
+  }
+
+  .card img {
+    width: 80px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .monster {
+    width: 80px;
+  }
+
+  .center-text {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .start-button {
+    padding: 5px 12px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-width: 280px;
+    padding: 12px;
+  }
+
+  .modal-content h2 {
+    font-size: 16px;
+  }
+
+  .modal-content input {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 13px;
+  }
+
+  .avatars {
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  .footer {
+    font-size: 11px;
+    padding: 8px;
+  }
+
+  body {
+    padding-top: 45px;
+  }
+}
+
+/* للهواتف العادية (480px إلى 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+  .navbar {
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .login-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .user-area {
+    font-size: 12px;
+  }
+
+  #chooseText {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .cards {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 200px;
+    height: 200px;
+    padding-top: 15px;
+  }
+
+  .card img {
+    width: 100px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .monster {
+    width: 100px;
+  }
+
+  .center-text {
+    font-size: 22px;
+    margin-top: 12px;
+  }
+
+  .start-button {
+    padding: 6px 15px;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  .modal-content h2 {
+    font-size: 17px;
+  }
+
+  .modal-content input {
+    padding: 8px;
+    margin: 6px 0;
+    font-size: 13px;
+  }
+
+  .avatars {
+    font-size: 26px;
+    gap: 12px;
+    margin: 8px 0;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+}
+
+/* للأجهزة اللوحية (768px إلى 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    height: 55px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .login-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  #chooseText {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .cards {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 180px;
+    height: 220px;
+    padding-top: 20px;
+  }
+
+  .card img {
+    width: 120px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .monster {
+    width: 120px;
+  }
+
+  .center-text {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+
+  .start-button {
+    padding: 7px 18px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .modal-content {
+    width: 380px;
+    padding: 20px;
+  }
+
+  .modal-content h2 {
+    font-size: 18px;
+  }
+
+  .modal-content input {
+    padding: 9px;
+    margin: 7px 0;
+    font-size: 13px;
+  }
+
+  .avatars {
+    font-size: 28px;
+    gap: 14px;
+    margin: 10px 0;
+  }
+
+  .footer {
+    font-size: 13px;
+    padding: 11px;
+  }
+
+  body {
+    padding-top: 55px;
+  }
+}
+
+/* الأجهزة الكبيرة (أكبر من 1024px - اللابتوب والحاسوب) */
+@media (min-width: 1025px) {
+  .navbar {
+    height: 60px;
+    padding: 0 25px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .login-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  #chooseText {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 220px;
+    height: 260px;
+    padding-top: 30px;
+  }
+
+  .card img {
+    width: 150px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .monster {
+    width: 150px;
+  }
+
+  .center-text {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .start-button {
+    padding: 6px 18px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .modal-content {
+    width: 380px;
+    padding: 25px;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
+  .modal-content input {
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+
+  .avatars {
+    font-size: 30px;
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  body {
+    padding-top: 60px;
+  }
 }

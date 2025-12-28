@@ -13,9 +13,18 @@
     <img id="image" src="" alt="word image">
 
     <div class="buttons">
-      <button onclick="checkAnswer(0)" id="btn0"></button>
-      <button onclick="checkAnswer(1)" id="btn1"></button>
-      <button onclick="checkAnswer(2)" id="btn2"></button>
+      <div class="option">
+        <button onclick="checkAnswer(0)" id="btn0"></button>
+        <button class="try-btn" id="try0" onclick="retryQuestion(0)" style="display:none">Try again</button>
+      </div>
+      <div class="option">
+        <button onclick="checkAnswer(1)" id="btn1"></button>
+        <button class="try-btn" id="try1" onclick="retryQuestion(1)" style="display:none">Try again</button>
+      </div>
+      <div class="option">
+        <button onclick="checkAnswer(2)" id="btn2"></button>
+        <button class="try-btn" id="try2" onclick="retryQuestion(2)" style="display:none">Try again</button>
+      </div>
     </div>
 
     <p id="result"></p>

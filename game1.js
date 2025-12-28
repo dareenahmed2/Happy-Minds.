@@ -20,6 +20,13 @@ function loadQuestion() {
   document.getElementById("btn2").innerText = questions[current].answers[2];
   document.getElementById("result").innerText = "";
   document.getElementById("nextBtn").style.display = "none";
+  // hide try buttons and enable answer buttons
+  for (let i = 0; i < 3; i++) {
+    const tryBtn = document.getElementById('try' + i);
+    const ansBtn = document.getElementById('btn' + i);
+    if (tryBtn) tryBtn.style.display = 'none';
+    if (ansBtn) ansBtn.disabled = false;
+  }
 }
 
 function checkAnswer(index) {
@@ -28,6 +35,11 @@ function checkAnswer(index) {
     document.getElementById("nextBtn").style.display = "inline-block";
   } else {
     document.getElementById("result").innerText = "❌ Try again!";
+
+    const tryBtn = document.getElementById('try' + index);
+    const ansBtn = document.getElementById('btn' + index);
+    if (tryBtn) tryBtn.style.display = 'inline-block';
+    if (ansBtn) ansBtn.disabled = true;
   }
 }
 
@@ -53,7 +65,18 @@ function nextQuestion() {
 }
 
 function goBack() {
-  window.location.href = "English.html";
+  window.location.href = "english.html";
+}
+
+function retryQuestion(index) {
+
+  const tryBtn = document.getElementById('try' + index);
+  const ansBtn = document.getElementById('btn' + index);
+  if (tryBtn) tryBtn.style.display = 'none';
+  if (ansBtn) ansBtn.disabled = false;
+  document.getElementById('result').innerText = '';
+
+  loadQuestion();
 }
 
 loadQuestion();

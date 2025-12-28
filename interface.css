@@ -145,6 +145,8 @@ body {
   cursor: pointer;
 }
 
+
+
 /* Footer */
 .footer {
   background: rgba(255,255,255,0.9);
@@ -158,7 +160,7 @@ body {
   color: #ee5168;
 }
 
-/* إخفاء نهائي */
+
 .hide {
-  display: none !important;
+  display: none ;
 }
